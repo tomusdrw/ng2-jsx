@@ -43,6 +43,12 @@ class Ng2JsxElement {
   }
 }
 
-export function ng2jsx (elem, props, ...children) {
+interface INg2Jsx {
+  (elem: any, props: any, children: Ng2JsxElement[]) : Ng2JsxElement;
+  keep : () => void;
+}
+
+export const element = <INg2Jsx> function ng2jsx (elem, props, ...children) {
   return new Ng2JsxElement(elem, props, children);
 }
+export function wrap(e : any) { return e; }

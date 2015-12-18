@@ -9,7 +9,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', 'tsx', 'ts']
+    extensions: ['', '.tsx', '.ts', '.js']
   },
   module: {
     loaders: [
@@ -20,8 +20,8 @@ module.exports = {
       {
         test: /\.tsx$/,
         loaders: [
-          'ts-loader',
-          'babel?plugins[]=syntax-jsx&plugins[]=transform-react-jsx'
+          'babel?plugins[]=syntax-jsx&plugins[]=transform-react-jsx',
+          'ts-loader'
         ]
       }
     ]
