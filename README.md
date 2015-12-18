@@ -1,4 +1,4 @@
-# Using JSX in Angular2 applications to generate templates
+# Using JSX in Angular2 applications
 
 ## Exemplary usage
 
