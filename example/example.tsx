@@ -25,15 +25,15 @@ class JsxComponent {
 
 @Component({
   selector: JsxContainer.toString(),
-  directives: [CORE_DIRECTIVES, JsxContainer.template.directives],
-  template: JsxContainer.template
+  directives: [CORE_DIRECTIVES, JsxContainer.tpl.directives],
+  template: JsxContainer.tpl
 })
 class JsxContainer {
   static toString () {
     return 'jsx-container';
   }
 
-  static get template () {
+  static get tpl () {
     return (
       <div class="whateva">
         <JsxComponent
@@ -45,5 +45,5 @@ class JsxContainer {
 }
 
 
-console.log(JsxContainer.toString());
-console.log(JsxContainer.template.directives);
+console.log(JsxContainer.tpl.toString());
+console.log(JsxContainer.tpl.directives);
