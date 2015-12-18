@@ -6,10 +6,9 @@
 @Component({
   selector: Component.toString(),
   inputs: ['val'],
-  // Referencing ng2jsx at least once to force compiler to keep that
-  template: ng2jsx.wrap((
+  template: (
     <h1>Hello World</h1>  
-  ))
+  )
 })
 class JsxComponent {
   public val : string;
